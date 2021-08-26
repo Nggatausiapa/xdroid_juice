@@ -307,15 +307,6 @@
       "HoldFd": true
     },
     {
-      "Name": "UfsClkGateEnable",
-      "Path": "/dev/sys/block/bootdevice/clkgate_enable",
-      "Values": [
-        "0",
-        "1"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "EnergyAware",
       "Path": "/proc/sys/kernel/sched_energy_aware",
       "Values": [
@@ -331,15 +322,6 @@
         "1",
         "0"
       ]
-    },
-    {
-      "Name": "F2fsRecessModeEnable",
-      "Path": "/dev/sys/fs/by-name/userdata/gc_urgent",
-      "Values": [
-        "2",
-        "0"
-      ],
-      "ResetOnInit": true
     },
     {
       "Name": "PowerHALMainState",
@@ -461,18 +443,6 @@
       "Value": "2597"
     },
     {
-      "PowerHint": "INTERACTION",
-      "Node": "UfsClkGateEnable",
-      "Duration": 200,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "DEVICE_IDLE",
-      "Node": "F2fsRecessModeEnable",
-      "Duration": 0,
-      "Value": "2"
-    },
-    {
       "PowerHint": "LAUNCH",
       "Node": "EnergyAware",
       "Duration": 5000,
@@ -569,18 +539,6 @@
       "Value": "1440000000"
     },
     {
-      "PowerHint": "LAUNCH",
-      "Node": "UfsClkGateEnable",
-      "Duration": 5000,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "F2fsRecessModeEnable",
-      "Duration": 0,
-      "Value": "2"
-    },
-    {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "EnergyAware",
       "Duration": 1000,
@@ -627,12 +585,6 @@
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 1000,
       "Value": "2c"
-    },
-    {
-      "PowerHint": "CAMERA_LAUNCH",
-      "Node": "UfsClkGateEnable",
-      "Duration": 1000,
-      "Value": "0"
     },
     {
       "PowerHint": "CAMERA_STREAMING_MID",
