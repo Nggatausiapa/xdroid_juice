@@ -152,11 +152,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += bt-mac-generator
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2 \
-    vendor.qti.hardware.perf@2.2.vendor
-
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
