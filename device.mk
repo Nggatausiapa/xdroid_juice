@@ -33,12 +33,15 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt
+
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/qcom/opensource/dataservices \
     vendor/qcom/opensource/data-ipa-cfg-mgr \
-    packages/apps/Bluetooth \
     hardware/xiaomi
 
 # Add default implementation of fastboot HAL.
@@ -133,20 +136,24 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    audio.bluetooth.default \
     android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth.a2dp@1.0-impl
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0 \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
 PRODUCT_PACKAGES += \
+    libbthost_if \
+    libtinycompress \
+    libbt-vendor \
     libldacBT_enc \
-    libldacBT_abr \
-    libbt-vendor
+    libldacBT_abr
 
 PRODUCT_PACKAGES += bt-mac-generator
 
@@ -609,9 +616,7 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
     libqcomfm_jni \
-    qcom.fmradio
 
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
