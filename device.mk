@@ -354,6 +354,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    vibrator.default
 
+# Xiaomi Parts
+PRODUCT_PACKAGES += \
+    parts \
+    doze
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
