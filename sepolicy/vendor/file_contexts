@@ -64,6 +64,7 @@
 
 # Power
 /vendor/bin/hw/android\.hardware\.power-service-qti                     u:object_r:hal_power_default_exec:s0
+/sys/touchpanel/double_tap                                              u:object_r:sysfs_touchpanel:s0
 
 # Thermal
 /vendor/bin/mi_thermald                                                 u:object_r:mi_thermald_exec:s0
@@ -78,6 +79,7 @@
 
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_bengal    u:object_r:hal_vibrator_default_exec:s0
+/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-03/1c40000.qcom,spmi:qcom,pmi632@3:qcom,vibrator@5700/leds/vibrator/vmax_mv u:object_r:sysfs_vibrator:s0
 
 # WiFi
 /vendor/bin/hw/android\.hardware\.wifi@1\.0-service           u:object_r:hal_wifi_default_exec:s0

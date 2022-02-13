@@ -27,4 +27,3 @@ type vendor_sysfs_iio, fs_type, sysfs_type;
 # Ultrasound
 type ultrasound_device, dev_type;
 
-

@@ -5,4 +5,7 @@ allow init proc_last_kmsg:file {
   setattr
 };
 
+allow init sysfs_touchpanel:{ file lnk_file } rw_file_perms;
+allow init sysfs_vibrator:{ file lnk_file } rw_file_perms;
+
 allow init adsprpcd_file:file mounton;
