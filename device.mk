@@ -42,6 +42,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/qcom/opensource/dataservices \
     vendor/qcom/opensource/data-ipa-cfg-mgr \
+    packages/apps/xiaomi \
     hardware/xiaomi
 
 # Add default implementation of fastboot HAL.
