@@ -157,8 +157,13 @@ PRODUCT_PACKAGES += bt-mac-generator
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.common@1.0 \
+    android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.provider@2.6 \
-    android.hardware.camera.device@3.6
+    android.hardware.camera.provider@2.6-service_64 \
+    android.hardware.camera.provider@2.6.vendor \
+    android.hardware.camera.provider@2.6-impl \
+    android.hardware.camera.device@3.6 \
+    android.hardware.camera.device@3.6.vendor
 
 PRODUCT_PACKAGES += \
    vendor.qti.hardware.camera.postproc@1.0.vendor
